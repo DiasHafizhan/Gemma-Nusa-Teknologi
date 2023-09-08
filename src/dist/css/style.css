@@ -1,0 +1,446 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* html{
+    height: 9000px;
+} */
+
+:root{
+    --navbar: #001C30;
+    --navbar-secondary: #0B666A;
+    --background-icon: #96B6C5;
+    --text-light: #FFFFFF;
+    --text-dark: #000000;
+    --btn: #3E6D9C;
+}
+
+/* Navbar Component start */
+
+.navbar.navbar-top{
+    background: var(--text-light);
+}
+
+.navbar.navbar-top a{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar.navbar-top span a .bx{
+    padding: 2px;
+    font-size: 25px;
+}
+
+.navbar{
+    /* width: 100%;
+    position: fixed; */
+    background: var(--text-light);
+}
+
+.navbar .nav-link a{
+    color: var(--text-dark);
+}
+
+/* Navbar Component end */
+
+/* Hero page start */
+.hero{
+    height: 100vh;
+    background-image: url(/src/assets/image/hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.hero .main{
+    padding-top: 10.5rem;
+}
+
+.hero h1{
+    color: var(--text-light);
+    font-weight: 700;
+}
+
+.hero p{
+    color: var(--text-light);
+}
+
+.hero .hero-link{
+    color: var(--text-light);
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* Hero page end */
+
+/* Layanan page start */
+.layanan h1{
+    margin-bottom: 100px;
+}
+
+.layanan .layanan-card{
+    position: relative;
+}
+
+.layanan .layanan-card .layanan-icon{
+    position: absolute;
+    background-color: #0B666A;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    top: -50px;
+    left: 65px;
+    z-index: 10; 
+}
+
+.layanan .layanan-card .layanan-icon img{
+    width: 70px;
+    margin-top: 10px;
+}
+
+.layanan .layanan-card .layanan-main{
+    width: 450px;
+    height: 380px;
+    margin-left: 7%;
+    background: var(--navbar);
+    border-radius: 10px;
+    color: var(--text);
+    padding: 80px 40px;
+    margin-bottom: 80px;
+}
+
+.layanan .layanan-card .layanan-main h3{
+    color: var(--text-light);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.layanan .layanan-card .layanan-main p{
+    color: var(--text-light);
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.layanan .layanan-card .layanan-main button{
+    width: 115px;
+    height: 43px;
+    background: #3E6D9C;
+    color: var(--text-light);
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Layanan page end */
+
+/* Pengalaman page start */
+.pengalaman{
+    width: 100%;
+    height: 750px;
+    background: var(--navbar);
+    border-radius: 40px;
+    margin-bottom: 65px;
+}
+
+.pengalaman .pengalaman-title h1{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: var(--text-light);
+}
+
+.swiper-slide{
+    width: 80%;
+    margin-inline: auto;
+}
+
+.swiper{
+    width: 100%;
+    height: 550px;
+}
+
+.pengalaman-card{
+    position: relative;
+    height: 100%;
+}
+
+.pengalaman .pengalaman-card img{
+    border-radius: 10px;
+}
+
+.pengalaman-card .background{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.pengalaman-card .pengalaman-wrapper{
+    position: absolute;
+    bottom: 10%;
+    padding: 15px;
+}
+
+.pengalaman-card .pengalaman-main{
+    color: var(--text-light);
+}
+
+.pengalaman-card .pengalaman-main h4{
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.pengalaman-card button{
+    width: auto;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background: var(--btn);
+    color: var(--text-light);
+}
+
+/* Pengalaman page end */
+
+/* KenapKami Page start */
+.kenapa-kami h1{
+    padding-bottom: 50px;
+}
+.kenapa-kami .kami-wrapper,
+.kenapa-kami .kami-wrapper-middle,
+.kenapa-kami .kami-wrapper-bottom{
+    display: flex;
+    justify-content: center;
+}
+
+.kenapa-kami .kami-wrapper .kami-main,
+.kenapa-kami .kami-wrapper-middle .kami-main-middle,
+.kenapa-kami .kami-wrapper-bottom .kami-main-bottom{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.kenapa-kami .kami-main .kami-card,
+.kenapa-kami .kami-main-middle .kami-card,
+.kenapa-kami .kami-main-bottom .kami-card{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 390px;
+    height: 103px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #000000;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.kenapa-kami .kami-main .kami-card:hover,
+.kenapa-kami .kami-main-middle .kami-card:hover,
+.kenapa-kami .kami-main-bottom .kami-card:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.kenapa-kami .kami-main .kami-card img,
+.kenapa-kami .kami-main-middle .kami-card img,
+.kenapa-kami .kami-main-bottom .kami-card img{
+    width: 70px;
+}
+
+.kenapa-kami .kami-main .kami-card h4,
+.kenapa-kami .kami-main-middle .kami-card h4,
+.kenapa-kami .kami-main-bottom .kami-card h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* KenapKami Page end */
+
+/* join page start */
+.join{
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+.join h1{
+    font-size: 39px;
+    max-width: 740px;
+}
+
+.join button{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 45px;
+    background: var(--navbar);
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-light);
+}
+/* join page end */
+
+/* Partner page start */
+.partners-1,
+.partners-2,
+.partners-3{
+    text-align: center;
+    padding:  2%;
+}
+
+.partners-1 img{
+    width: 170px;
+}
+
+.partners-3 img{
+    width: 285px;
+}
+
+.partners-1 a{
+    padding: 33px;
+}
+
+.partners-2 a{
+    padding: 30px;
+}
+
+.partners-3{
+    padding-bottom: 10px;
+}
+
+.partners-3 a{
+    padding: 25px;
+}
+/* Partner page end */
+
+/* layanan page start */
+.manage h1,
+.core h1{
+    padding-top: 40px;
+}
+
+.manage .row:nth-child(1) p,
+.core .row:nth-child(1) p{
+    margin: auto;
+    padding-bottom: 50px;
+    max-width: 710px;
+}
+
+.manage h2,
+.core h2{
+    padding-bottom: 80px;
+}
+
+.manage .card-icon,
+.manage .card-icon-layanan,
+.core .card-icon,
+.core .card-icon-layanan{
+    width: 380px;
+    height: 349px;
+    background: var(--background-icon);
+    border-radius: 10px;
+}
+
+.manage .card-icon div,
+.manage .card-icon-layanan div,
+.core .card-icon div,
+.core .card-icon-layanan div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manage .card-main,
+.manage .card-main-layanan,
+.core .card-main,
+.core .card-main-layanan{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.manage .card-main div,
+.core .card-main div{
+    position: absolute;
+    top: 40%;
+}
+
+.manage .card-main-layanan div,
+.core .card-main-layanan div{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.manage .card-main div h4,
+.manage .card-main-layanan div h4,
+.core .card-main div h4,
+.core .card-main-layanan div h4{
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.manage .card-main-layanan div p,
+.core .card-main-layanan div p{
+    max-width: 400px;
+}
+/* layanan page end */
+
+/* LoginPage start */
+.login{
+    width: 763px;
+    height: 661px;
+    background: #D9D9D9;
+}
+/* LoginPage end */
+
+/* Footer Component start */
+.footer{
+    margin-top: 50px;
+    padding: 5px;
+    height: 200px;
+    background: var(--navbar);
+    color: var(--text-light);
+}
+
+.footer .container{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.footer-logo{
+    padding: 10px;
+    background: var(--text-light);
+    border-radius: 10px;
+    margin-right: 45px;
+}
+
+.footer-logo img{
+    width: 45px;
+}
+
+.footer-office{
+    margin-top: 20px;
+    width: 900px;
+    line-height: 10px;
+    font-size: 15px;
+}
+
+.footer-judul{
+    font-weight: 700;
+}
+
+.copyright{
+    text-align: center;
+}
+/* Footer Component emd */
