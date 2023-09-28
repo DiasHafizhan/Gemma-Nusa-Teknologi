@@ -9,7 +9,7 @@ const NavbarTopComponent = () => {
           <Navbar.Brand href="#home">Gemma Nusa Teknologi</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
-            <Navbar.Text>
+            <Navbar.Text className='d-flex gap-2'>
               <Link><i className='bx bx-map'></i></Link>
               <Link><i className='bx bxs-user-circle' ></i></Link>
             </Navbar.Text>

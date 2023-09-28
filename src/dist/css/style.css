@@ -35,6 +35,15 @@
     /* width: 100%;
     position: fixed; */
     background: var(--text-light);
+    /* top: 30px;
+    z-index: 999; */
+}
+
+.navbar-fixed{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
 }
 
 .navbar .nav-link a{
